@@ -11,7 +11,7 @@ public class ItemGroups {
     public static final NestedItemGroup CRAFTING_MATERIALS = new NestedItemGroup(
         new NamespacedKey(SlimeEnchanter.getInstance(), "crafting_materials"),
         new CustomItemStack(
-            new ItemStack(Material.BLACK_STAINED_GLASS),
+            new ItemStack(Material.CRAFTING_TABLE),
             "&aCrafting Materials"
         )
     );
