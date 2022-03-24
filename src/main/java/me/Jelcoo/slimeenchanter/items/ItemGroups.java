@@ -15,11 +15,51 @@ public class ItemGroups {
             "&aCrafting Materials"
         )
     );
+    public static final NestedItemGroup ENCHANTMENTS_SWORD = new NestedItemGroup(
+        new NamespacedKey(SlimeEnchanter.getInstance(), "enchantments_sword"),
+        new CustomItemStack(
+            new ItemStack(Material.DIAMOND_SWORD),
+            "&aSword"
+        )
+    );
+    public static final NestedItemGroup ENCHANTMENTS_TOOLS = new NestedItemGroup(
+        new NamespacedKey(SlimeEnchanter.getInstance(), "enchantments_tools"),
+        new CustomItemStack(
+            new ItemStack(Material.DIAMOND_PICKAXE),
+            "&aTools"
+        )
+    );
+    public static final NestedItemGroup ENCHANTMENTS_ARMOR = new NestedItemGroup(
+        new NamespacedKey(SlimeEnchanter.getInstance(), "enchantments_armor"),
+        new CustomItemStack(
+            new ItemStack(Material.DIAMOND_CHESTPLATE),
+            "&aArmor"
+        )
+    );
+    public static final NestedItemGroup ENCHANTMENTS_BOWS = new NestedItemGroup(
+        new NamespacedKey(SlimeEnchanter.getInstance(), "enchantments_bows"),
+        new CustomItemStack(
+            new ItemStack(Material.BOW),
+            "&aBow"
+        )
+    );
+    public static final NestedItemGroup ENCHANTMENTS_OTHER = new NestedItemGroup(
+        new NamespacedKey(SlimeEnchanter.getInstance(), "enchantments_other"),
+        new CustomItemStack(
+            new ItemStack(Material.FISHING_ROD),
+            "&aOther"
+        )
+    );
 
     static {
         final SlimeEnchanter plugin = SlimeEnchanter.getInstance();
 
         // Register Categories
-        ItemGroups.CRAFTING_MATERIALS.register(plugin);
+        CRAFTING_MATERIALS.register(plugin);
+        ENCHANTMENTS_SWORD.register(plugin);
+        ENCHANTMENTS_TOOLS.register(plugin);
+        ENCHANTMENTS_ARMOR.register(plugin);
+        ENCHANTMENTS_BOWS.register(plugin);
+        ENCHANTMENTS_OTHER.register(plugin);
     }
 }
